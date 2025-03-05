@@ -1,0 +1,141 @@
+{
+  "locations": [
+    {
+      "name": "Central Station",
+      "address": "123 Main St, Cityville",
+      "chargers_status": {"Available": 3, "Charging": 5, "Standby": 2, "Offline": 4, "Faulted": 1}
+    },
+    {
+      "name": "Downtown Plaza",
+      "address": "456 Market St, Cityville",
+      "chargers_status": {"Available": 2, "Charging": 4, "Standby": 3, "Offline": 5, "Faulted": 1}
+    },
+    {
+      "name": "Mall Parking",
+      "address": "789 Mall Rd, Cityville",
+      "chargers_status": {"Available": 5, "Charging": 3, "Standby": 1, "Offline": 2, "Faulted": 4}
+    },
+    {
+      "name": "Tech Park",
+      "address": "101 Innovation Dr, Cityville",
+      "chargers_status": {"Available": 4, "Charging": 2, "Standby": 5, "Offline": 3, "Faulted": 1}
+    },
+    {
+      "name": "Airport Terminal",
+      "address": "202 Runway Rd, Cityville",
+      "chargers_status": {"Available": 3, "Charging": 6, "Standby": 1, "Offline": 4, "Faulted": 2}
+    }
+  ],
+  "chargers": [
+    {
+      "charger_name": "FastCharge A1",
+      "status": "online",
+      "location": "Central Station",
+      "max_power": 150,
+      "charging_power": 120,
+      "degrees_fahrenheit": 75
+    },
+    {
+      "charger_name": "EcoCharge B2",
+      "status": "offline",
+      "location": "Downtown Plaza",
+      "max_power": 100,
+      "charging_power": 0,
+      "degrees_fahrenheit": 80
+    },
+    {
+      "charger_name": "SuperVolt C3",
+      "status": "online",
+      "location": "Mall Parking",
+      "max_power": 200,
+      "charging_power": 180,
+      "degrees_fahrenheit": 72
+    },
+    {
+      "charger_name": "GreenPower D4",
+      "status": "online",
+      "location": "Tech Park",
+      "max_power": 120,
+      "charging_power": 100,
+      "degrees_fahrenheit": 78
+    },
+    {
+      "charger_name": "SpeedCharge E5",
+      "status": "offline",
+      "location": "Airport Terminal",
+      "max_power": 250,
+      "charging_power": 0,
+      "degrees_fahrenheit": 85
+    }
+  ],
+  "vehicles": [
+    {
+      "vehicle_name": "Tesla Model 3",
+      "state_of_charge": 80,
+      "status": "charging",
+      "charging_time_remaining": "30 min",
+      "driver": "John Doe",
+      "charger_id": 1
+    },
+    {
+      "vehicle_name": "Nissan Leaf",
+      "state_of_charge": 60,
+      "status": "standby",
+      "charging_time_remaining": "N/A",
+      "driver": "Jane Smith",
+      "charger_id": 2
+    },
+    {
+      "vehicle_name": "Ford Mustang Mach-E",
+      "state_of_charge": 45,
+      "status": "offline",
+      "charging_time_remaining": "N/A",
+      "driver": "Alice Brown",
+      "charger_id": 3
+    },
+    {
+      "vehicle_name": "BMW i4",
+      "state_of_charge": 90,
+      "status": "charging",
+      "charging_time_remaining": "15 min",
+      "driver": "Michael Johnson",
+      "charger_id": 4
+    },
+    {
+      "vehicle_name": "Chevy Bolt EV",
+      "state_of_charge": 50,
+      "status": "available",
+      "charging_time_remaining": "N/A",
+      "driver": "Sarah Lee",
+      "charger_id": 5
+    }
+  ],
+  "charging_ports": {
+    "charging": 15,
+    "standby": 8,
+    "reserved": 5,
+    "available": 20,
+    "offline": 10,
+    "faulted": 3
+  },
+  "dashboard_overview": {
+    "sessions": 234,
+    "energy": "2,766 kWh",
+    "cost_of_electricity": "$443",
+    "revenue": "$1,234"
+  },
+  "chart_data": {
+    "last_month_data": {
+    "sessions": [246, 203, 217, 205, 224, 230, 227, 203, 232, 238, 245, 226, 232, 221, 206, 217, 206, 247, 213, 240, 237, 240, 246, 235, 235, 209, 216, 212, 228, 221],
+    "energy": ["2422 kWh", "2580 kWh", "2522 kWh", "2560 kWh", "2490 kWh", "2421 kWh", "2461 kWh", "2566 kWh", "2454 kWh", "2574 kWh", "2429 kWh", "2547 kWh", "2400 kWh", "2432 kWh", "2464 kWh", "2403 kWh", "2486 kWh", "2570 kWh", "2402 kWh", "2568 kWh", "2519 kWh", "2537 kWh", "2402 kWh", "2507 kWh", "2467 kWh", "2595 kWh", "2471 kWh", "2594 kWh", "2593 kWh", "2511 kWh"],
+    "cost_of_electricity": ["$388", "$412", "$405", "$385", "$407", "$401", "$393", "$406", "$392", "$404", "$380", "$400", "$393", "$414", "$409", "$418", "$393", "$417", "$407", "$394", "$410", "$400", "$400", "$405", "$385", "$404", "$405", "$406", "$409", "$392"],
+    "revenue": ["$1139", "$1082", "$1092", "$1080", "$1145", "$1121", "$1065", "$1132", "$1078", "$1098", "$1080", "$1108", "$1089", "$1091", "$1125", "$1059", "$1147", "$1118", "$1064", "$1114", "$1100", "$1077", "$1092", "$1116", "$1139", "$1056", "$1062", "$1068", "$1107", "$1108"]
+  },
+    "last_week_data": {
+      "sessions": [50, 52, 55, 53, 57, 60, 65],
+      "energy": ["500 kWh", "510 kWh", "520 kWh", "530 kWh", "540 kWh", "550 kWh", "560 kWh"],
+      "cost_of_electricity": ["$80", "$82", "$85", "$87", "$89", "$91", "$94"],
+      "revenue": ["$300", "$310", "$320", "$330", "$340", "$350", "$360"]
+    }
+  }
+}
